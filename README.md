@@ -3,6 +3,7 @@
 Description of the method to solve the problem
 
 -> First of all I created a react App using create-react-app
+
 -> According to the given problem statement, Firstly decided the User interface layout.
 -> Then divided whole web app in smaller components like - Navbar, Card, Loader etc.
 -> Now I have created a Navbar that showcase the brand name and a button to click and fetching the data dynamically.
