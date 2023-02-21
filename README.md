@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+## User_grid
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description of the method to solve the problem
 
-## Available Scripts
+-> First of all I created a react App using create-react-app
+-> According to the given problem statement, Firstly decided the User interface layout.
+-> Then divided whole web app in smaller components like - Navbar, Card, Loader etc.
+-> Now I have created a Navbar that showcase the brand name and a button to click and fetching the data dynamically.
+-> Then implemented the card component and given the styling in the separate card.css file.
+-> Now the challenge was to get the data from the API, so for that I have passed get_data method as the prop to navbar component and implemented it in APP component.
+-> Now added onClick method to the Navbar button element, so on clicking the button the get_data function get executed.
+-> In get_data function used the fetch method to get the data from the API and then changed the user state of the app component.
+-> App component has 3 states - first is isLoading... This is initially set false but changed to true while get_data was fetching the data. This is used for rendering the Loader while data was fetching.
+-> user state was initially null so no cards will be shown at initial startup of the app. onClick of the button the user state has data as object. Now this state change of app component re-render the app with the cards components dynamically using the map function.
+-> This is how IT has all the required functionalities implemented.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Time Taken to complete the Assignment - 2 days.
